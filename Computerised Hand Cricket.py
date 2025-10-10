@@ -287,7 +287,7 @@ def batting(batting_side: CricketTeam, bowling_side: CricketTeam, chasing: bool,
           crr = batting_side.score/batting_side.balls_played * 6
           wickets = _.wickets
           overs = _.bowl_balls/6
-          _.bowling_performance = 3*(crr-eco)/eco + 2*(wickets/overs) + 7
+          _.bowling_performance = 3*(crr-eco)/eco + 2*(wickets/overs) + 7 if eco != 0 else 10
         
         except ZeroDivisionError:
           pass
