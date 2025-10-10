@@ -170,7 +170,7 @@ def createBowlingOrder(bowling_team: CricketTeam) -> list[Player]:
       available_bowlers.remove(bowler) #remove bowlers who have quota maxed out
   
   remaining_order: list[Player] = [] #an unshuffled list of bowlers
-  overs_remaining: int = 20 - bowling_order.count("_")
+  overs_remaining: int = bowling_order.count("_")
   i = 0
   for bowler in available_bowlers: #the sorting helps us give more overs to ones with higher rating
     for _ in range(4 - overs_dict[bowler]):
