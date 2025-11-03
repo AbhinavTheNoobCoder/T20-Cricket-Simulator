@@ -1,7 +1,9 @@
 import random
 from typing import Literal
 from collections import Counter
-print('''Welcome to Hand Cricket.
+
+if __name__ == "__main__":
+  print('''Welcome to Hand Cricket.
 Write the playing XI for both the teams and the computer will play a T20 game.
 To specify the name of a fast bowling option, write "(fb)" AFTER their name.
 To specify the name of a slow/spin bowling option, write "(sb)" AFTER their name.
@@ -504,3 +506,4 @@ if __name__ == "__main__": #run code only when it's the main program
     
     else: #quit the loop
       break
+
